@@ -41,6 +41,7 @@ $MyHeader = "My Header";
         <link href="/Scripts/jquery-ui-1.11.1.Redmond/jquery-ui.css" rel="stylesheet" />
         -->
     <?php
+    include_once "Menu.php";
     // Set style page
     switch ($myStyle) {
         case "1":
