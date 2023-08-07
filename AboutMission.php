@@ -5,7 +5,7 @@ include_once "MyHeader.php";
 <?php
 $MyHeader = "About/Mission Page";
 
-echo "<br> <br> Mission statement here.";
+echo "<br> <br> [Team Name] mission statement here.";
 ?>
 
 <?php
