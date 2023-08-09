@@ -7,6 +7,7 @@ $MyHeader = "Contact Page";
 
 echo "<br> Reach out to one of us using the information below! <br> <br>";
 
+echo "<br> Subpages: <nav> <a href='Contact/ContactEmail.php'>Email</a> <a href='Contact/ContactLocations.php'>Locations</a> </nav>";
 ?>
 
 <ul class="ContactInfo">
