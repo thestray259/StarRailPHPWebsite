@@ -1,2 +1,45 @@
-﻿body {
+﻿html {
+    font-size: 16px;
+    color: #EFD9CE;
+    background-color: #25283D;
+}
+
+header {
+    display: inline-block;
+    background-color: #069D98;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #069D98;
+}
+
+h1 {
+    text-align: center;
+}
+
+a:link {
+    color: #FFD6E0;
+}
+
+a:visited {
+    color: #FFD6E0;
+}
+
+a:hover {
+    color: #8F3985;
+}
+
+div {
+    text-align: justify;
 }
