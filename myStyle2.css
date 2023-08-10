@@ -7,8 +7,20 @@
 header {
     display: inline-block;
     background-color: #963D5A;
-    width: 100%;
+    width: 90%;
+    padding: 20px 5%;
     text-align: center;
+}
+
+nav {
+    margin: auto;
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 50px;
+}
+
+ul {
+    padding: 10px 10px;
 }
 
 li {
@@ -25,7 +37,10 @@ footer {
 }
 
 h1 {
+    margin: auto;
     text-align: center;
+    width: fit-content;
+    padding: 10px 50px;
 }
 
 a:hover {
@@ -33,5 +48,15 @@ a:hover {
 }
 
 div {
-    text-align: justify;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    margin: auto;
+    width: 50%;
 }

@@ -1,13 +1,13 @@
 <?php
-include_once "MyHeader.php";
+$myHeader = "Contact Page";
+include_once "..\MyHeader.php";
 ?>
 
 <?php
-$MyHeader = "Contact Page";
 
 echo "<br> Reach out to one of us using the information below! <br> <br>";
 
-echo "<br> Subpages: <nav> <a href='Contact/ContactEmail.php'>Email</a> <a href='Contact/ContactLocations.php'>Locations</a> </nav>";
+echo "<br> Subpages: <nav> <a href='ContactEmail.php'>Email</a> <a href='ContactLocations.php'>Locations</a> </nav>";
 ?>
 
 <ul class="ContactInfo">
@@ -29,5 +29,5 @@ echo "<br> Subpages: <nav> <a href='Contact/ContactEmail.php'>Email</a> <a href=
 </ul>
 
 <?php
-include_once "MyFooter.php";
+include_once "..\MyFooter.php";
 ?>

@@ -1,4 +1,5 @@
 <?php
+$myHeader = "Login";
 include_once "MyHeader.php";
 
 // Use this page to change the value of
@@ -14,6 +15,6 @@ You do not need to "wire-up" a database.
 You could have two buttons that change the session value for an admin/user
 
 <?php
-include_once "MyHeader.php";
+include_once "MyFooter.php";
 ?>
 
