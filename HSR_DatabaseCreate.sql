@@ -114,3 +114,8 @@ INSERT INTO MyWebDocs ( id, Title, Header1, Text1, ParentPage, SortOrder, isActi
 VALUES    (8, 'Something 2', 'Sub Header number 2', 'My text, asfaf af af af a sag asf saf', 2, 4, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Something 2', Header1 = 'Sub Header number 2', Text1 = 'My text, asfaf af af af a sag asf saf', ParentPage = 2, SortOrder = 4, isActive = 1;
+
+-- ---------------------
+-- Characers
+INSERT INTO Characters (CharacterID, CharacterName, BackgroundInfo, PathName, ElementType, StarRarity)
+values (1, "March 7th", "A girl who once slumbered in eternal ice and knows nothing about her past. To find out the truth about her origins, she decided to travel with the Astral Express. As of right now, she has prepared about 67 different versions of her life story for herself.", "Preservation", "Ice", 4)
