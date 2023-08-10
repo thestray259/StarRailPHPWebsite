@@ -3,7 +3,6 @@
 ?>
 
 <?php
-// //////////////////////////////////////////////////
 function MenuDisplay($dataset) {
 
 // &nbsp; &nbsp;<a href="ContactUs.php">
@@ -20,7 +19,7 @@ function MenuDisplay($dataset) {
     }
 
 }
-// /////////////////
+
 function PageDisplay($PageData) {
 
     if ($PageData){

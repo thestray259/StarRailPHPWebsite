@@ -1,9 +1,4 @@
-
-</body>
-
-<?php
-echo "Copyright 2023";
-?>
-
+        <footer><?php echo "Copyright 2023";?></footer>
+    </body>
 </html>
 
