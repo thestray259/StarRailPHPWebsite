@@ -1,7 +1,9 @@
-﻿use  MyTestDb;
+CREATE DATABASE IF NOT EXISTS Honkai_Star_Rail;
+
+USE honkai_star_rail;
 
 create table if not exists MyUsers(
- id int not null AUTO_INCREMENT PRIMARY KEY,
+ ID int not null AUTO_INCREMENT PRIMARY KEY,
  First_Name varchar(25) Not null,
  Last_Name varchar(25) Not null,
  UserId varchar(25),
@@ -10,9 +12,8 @@ create table if not exists MyUsers(
  isActive int
 );
 
-
 create table if not exists MyWebDocs(
- id int not null AUTO_INCREMENT PRIMARY KEY,
+ WebDocID int not null AUTO_INCREMENT PRIMARY KEY,
  Title varchar(25) Not null,
 -- Category varchar(25),
  Header1 varchar(25),
@@ -20,6 +21,37 @@ create table if not exists MyWebDocs(
  ParentPage int DEFAULT 0,
  SortOrder int DEFAULT 2,
  isActive int
+);
+
+CREATE TABLE IF NOT EXISTS Characters (
+	CharacterID int not null auto_increment primary key,
+    CharacterName varchar(45) not null,
+    BackgroundInfo varchar(300),
+    PathName varchar(25),
+    ElementType varchar(25),
+    StarRarity int
+);
+
+CREATE TABLE IF NOT EXISTS Aeons (
+	AeonID int not null auto_increment primary key,
+    AeonName varchar(45) not null,
+    BackgroundInfo varchar(300),
+    PathName varchar(25)
+);
+
+CREATE TABLE IF NOT EXISTS LightCones (
+	LightConeID int not null auto_increment primary key,
+    LightConeName varchar(50) not null,
+    BackgroundInfo varchar(300),
+    PathName varchar(25),
+    SetBonusDesc varchar(300)
+);
+
+CREATE TABLE IF NOT EXISTS Relics (
+	RelicID int not null auto_increment primary key,
+    RelicName varchar(50) not null,
+    BackgroundInfo varchar(300),
+    SetBonusDesc varchar(300)
 );
 
 -- Sample data
@@ -38,7 +70,6 @@ VALUES    (2, 'aFirstName', 'aLastName', 'myadmin', 'a', 1, 1)
 ON DUPLICATE KEY UPDATE
 First_Name = 'aFirstName', Last_Name = 'aLastName', UserId = 'myadmin', Pswd = 'a', isAdmin = 1, isActive = 1;
 
--- --------------------------------------
 -- Main links/pages
 INSERT INTO MyWebDocs ( id, Title, Header1, Text1, SortOrder, isActive)
 VALUES    (1, 'Home', 'Header number 1', 'My text, asfaf af af af a sag asf saf', 0, 1)
@@ -83,7 +114,3 @@ INSERT INTO MyWebDocs ( id, Title, Header1, Text1, ParentPage, SortOrder, isActi
 VALUES    (8, 'Something 2', 'Sub Header number 2', 'My text, asfaf af af af a sag asf saf', 2, 4, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Something 2', Header1 = 'Sub Header number 2', Text1 = 'My text, asfaf af af af a sag asf saf', ParentPage = 2, SortOrder = 4, isActive = 1;
-
-
-
-
