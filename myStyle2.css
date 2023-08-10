@@ -1,2 +1,37 @@
-﻿body {
+﻿html {
+    font-size: 16px;
+    color: #EAF0CE;
+    background-color: #29000C;
+}
+
+header {
+    display: inline-block;
+    background-color: #963D5A;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #963D5A;
+}
+
+h1 {
+    text-align: center;
+}
+
+a:hover {
+    color: darkred;
+}
+
+div {
+    text-align: justify;
 }

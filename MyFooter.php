@@ -2,7 +2,7 @@
 </body>
 
 <?php
-echo "Copyright 2023";
+echo "<footer> Copyright 2023 </footer>";
 ?>
 
 </html>

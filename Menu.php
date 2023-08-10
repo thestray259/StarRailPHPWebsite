@@ -1,7 +1,7 @@
 <?php
 
 ?>
-
+<link href="myStyle1.css" rel="stylesheet" />
 <header>
     <nav>
         <ul>
