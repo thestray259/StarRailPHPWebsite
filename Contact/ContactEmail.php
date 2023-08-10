@@ -1,11 +1,11 @@
 <?php
-include_once "MyHeader.php";
+$myHeader = "Contact - Email";
+include_once "..\MyHeader.php";
 ?>
 
 <?php
-$MyHeader = "Contact/Email Page";
 
-echo "<br> Contact us using the form below! <br> <br>";
+echo "<br> <p>Contact us using the form below!</p> <br> <br>";
 ?>
 
 <div class="container">
@@ -27,5 +27,5 @@ echo "<br> Contact us using the form below! <br> <br>";
 </div>
 
 <?php
-include_once "MyFooter.php";
+include_once "..\MyFooter.php";
 ?>

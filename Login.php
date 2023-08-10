@@ -1,4 +1,5 @@
 <?php
+$myHeader = "Login";
 include_once "MyHeader.php";
 
 // Use this page to change the value of

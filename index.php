@@ -1,4 +1,6 @@
 <?php
+
+$myHeader = "Star Rail Database";
 include_once "MyHeader.php";
 ?>
 
@@ -34,6 +36,8 @@ include_once "MyHeader.php";
 //}
 
 ?>
+<h1>Welcome!</h1>
+<p>Thanks for choosing the Star Rail Database! Here you can analyze and compare stats of characters, Light Cones, and Relics. You can also find info on the Various Aeons here!</p>
 
 <?php
 // Always close db connection

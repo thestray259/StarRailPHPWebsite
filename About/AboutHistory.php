@@ -1,13 +1,13 @@
 <?php
-include_once "MyHeader.php";
+$myHeader = "History";
+include_once "..\MyHeader.php";
 ?>
 
 <?php
-$MyHeader = "About/History Page";
 
-echo "<br> <br> History here.";
+echo "<br> <br> <p>History here.</p>";
 ?>
 
 <?php
-include_once "MyFooter.php";
+include_once "..\MyFooter.php";
 ?>
