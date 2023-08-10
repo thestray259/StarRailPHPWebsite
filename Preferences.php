@@ -9,6 +9,6 @@ include_once "MyHeader.php";
 Add code (form) to change style preferences. 
 
 <?php
-include_once "MyHeader.php";
+include_once "MyFooter.php";
 ?>
 
