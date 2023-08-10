@@ -3,6 +3,10 @@ $myHeader = "Page Manager";
 include_once "MyHeader.php";
 
 // Use this page to change the value of a page
+if($_SESSION["isAdmin"] == 0) {
+    header("Location: Login.php");
+    exit();
+}
 
 ?>
 
@@ -22,11 +26,13 @@ include_once "MyHeader.php";
 
 <br />
 <br />
-My sugestion: Create a Table that lists all the pages (records) in the database. Each record will have an Edit and Delete link.
+
+</li>
 <br />
-Each link takes the person to a page where they can edit the content
 
 <?php
+//My sugestion: Create a Table that lists all the pages (records) in the database. Each record will have an Edit and Delete link.
+//Each link takes the person to a page where they can edit the content
 include_once "MyHeader.php";
 ?>
 
