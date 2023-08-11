@@ -1,5 +1,8 @@
 CREATE DATABASE IF NOT EXISTS Honkai_Star_Rail;
 
+drop table MyUsers;
+drop table MyWebDocs;
+
 USE honkai_star_rail;
 
 create table if not exists MyUsers(
@@ -71,22 +74,22 @@ ON DUPLICATE KEY UPDATE
 First_Name = 'aFirstName', Last_Name = 'aLastName', UserId = 'myadmin', Pswd = 'a', isAdmin = 1, isActive = 1;
 
 -- Main links/pages
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, SortOrder, isActive)
 VALUES    (1, 'Home', 'Header number 1', 'My text, asfaf af af af a sag asf saf', 0, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Home', Header1 = 'Header number 1', Text1 = 'My text, asfaf af af af a sag asf saf', SortOrder = 0, isActive = 1;
 
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, SortOrder, isActive)
 VALUES    (2, 'Something', 'Header number 2', 'My text, asfaf af af af a sag asf saf', 2, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'something', Header1 = 'Header number 2', Text1 = 'My text, asfaf af af af a sag asf saf', SortOrder = 2, isActive = 1;
 
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, SortOrder, isActive)
 VALUES    (3, 'About', 'Header number 3', 'My text, asfaf af af af a sag asf saf', 3, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'About', Header1 = 'Header number 3', Text1 = 'My text, asfaf af af af a sag asf saf', SortOrder = 3, isActive = 1;
 
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, SortOrder, isActive)
 VALUES    (4, 'Contact Us', 'Header number 4', 'My text, asfaf af af af a sag asf saf', 4, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Contact Us', Header1 = 'Header number 4', Text1 = 'My text, asfaf af af af a sag asf saf', SortOrder = 4, isActive = 1;
@@ -94,23 +97,23 @@ Title = 'Contact Us', Header1 = 'Header number 4', Text1 = 'My text, asfaf af af
 -- ---------------------
 -- Sub pages
 -- Note Parent Id points to the record with id=1
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, ParentPage, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, ParentPage, SortOrder, isActive)
 VALUES    (5, 'Home 1', 'Sub Header number 1', 'My text, asfaf af af af a sag asf saf', 1, 3, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Home 1', Header1 = 'Sub Header number 1', Text1 = 'My text, asfaf af af af a sag asf saf', ParentPage = 1, SortOrder = 3, isActive = 1;
 
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, ParentPage, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, ParentPage, SortOrder, isActive)
 VALUES    (6, 'Home 2', 'Sub Header number 2', 'My text, asfaf af af af a sag asf saf', 1, 4, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Home 2', Header1 = 'Sub Header number 2', Text1 = 'My text, asfaf af af af a sag asf saf', ParentPage = 1, SortOrder = 4, isActive = 1;
 
 -- Note Parent Id points to the record with id=2
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, ParentPage, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, ParentPage, SortOrder, isActive)
 VALUES    (7, 'Something 1', 'Sub Header number 1', 'My text, asfaf af af af a sag asf saf', 2, 3, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Something 1', Header1 = 'Sub Header number 1', Text1 = 'My text, asfaf af af af a sag asf saf', ParentPage = 2, SortOrder = 3, isActive = 1;
 
-INSERT INTO MyWebDocs ( id, Title, Header1, Text1, ParentPage, SortOrder, isActive)
+INSERT INTO MyWebDocs ( WebDocID, Title, Header1, Text1, ParentPage, SortOrder, isActive)
 VALUES    (8, 'Something 2', 'Sub Header number 2', 'My text, asfaf af af af a sag asf saf', 2, 4, 1)
 ON DUPLICATE KEY UPDATE
 Title = 'Something 2', Header1 = 'Sub Header number 2', Text1 = 'My text, asfaf af af af a sag asf saf', ParentPage = 2, SortOrder = 4, isActive = 1;
